@@ -88,7 +88,7 @@ const Q = [
  {k:"parentesco",t:"radio",q:"Qual é a sua relação com a pessoa com demência?",o:["Cônjuge","Filho(a)","Outro familiar","Cuidador(a) contratado(a)","Outro"]},
  {k:"mora_junto",t:"radio",q:"Você mora com ela?",o:["Sim","Não"]},
  {k:"acesso",t:"radio",q:"Você conseguiu entrar e assistir à aula sem problemas?",o:["Sim, sem problemas","Entrei, mas com dificuldade (som, imagem ou internet)","Não consegui entrar"],m:"pos"},
- {k:"acesso_desc",t:"text",q:"O que aconteceu? (conte rapidinho)",show:a=>a.acesso&&!a.acesso.startsWith("Sim"),opt:true,m:"pos"},
+ {k:"acesso_desc",t:"text",q:"O que aconteceu na aula? (conte rapidinho o que foi falado)",show:a=>a.acesso&&!a.acesso.startsWith("Sim"),opt:true,m:"pos"},
  {k:"dispositivo",t:"radio",q:"Em qual aparelho você assistiu?",o:["Celular em pé","Celular deitado (horizontal)","Computador","Tablet","Outro"],m:"pos"},
  {k:"saiu",t:"radio",q:"Você ficou até o final da aula?",o:["Sim, assisti do início ao fim","Saí por pouco tempo e voltei","Não fiquei até o final"],m:"pos"},
  {k:"motivo_saida",t:"radio",q:"Qual foi o motivo?",o:["Precisei atender meu familiar","Estava no horário de trabalho","Problema de internet","Horário ruim","Outro"],show:a=>a.saiu&&!a.saiu.startsWith("Sim"),m:"pos"},
